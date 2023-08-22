@@ -3,8 +3,15 @@
 namespace App\Output;
 
 class HogeResponse {
-    function __construct(
-        private string $message
-    )
-    { }
+    private string $message;
+
+    function getMessage(): string
+    {
+        return $this->message;
+    }
+
+    function setMessage(string $_message)
+    {
+        $this->message = $_message;
+    }
 }

@@ -2,7 +2,6 @@
 
 use PHPUnit\Framework\TestCase;
 use App\FizzBuzz;
-use ErrorException;
 
 final class FizzBuzzTest extends TestCase
 {

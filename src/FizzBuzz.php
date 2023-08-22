@@ -10,7 +10,7 @@ class FizzBuzz
     {
         if ($v <= 0)
         {
-            throw new ErrorException();
+            throw new ErrorException("Value Error");
         }
 
         if($v % 15 === 0)

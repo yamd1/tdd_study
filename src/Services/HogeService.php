@@ -10,6 +10,8 @@ class HogeService
 {
     public function inputClass(HogeRequest $input): HogeResponse 
     {
-        return new HogeResponse(sprintf("こんにちは%s", $input->name));
+        $response = new HogeResponse();
+        $response->setMessage(sprintf("こんにちは%s", $input->getName()));
+        return $response;
     }
 }
